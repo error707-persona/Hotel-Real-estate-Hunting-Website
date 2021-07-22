@@ -1,0 +1,221 @@
+ //algorithm
+ <?php
+ /*$ans=$collection->find(['Location'=>"Borivali(E)"]);
+ $tprice=0.0;
+ foreach($ans as $a){
+    $price=$a['price'];
+    $tprice=$tprice+$price;
+ }
+    
+  $avgprice=$tprice/4;
+  $perc=$avgprice/$tprice*100;
+
+
+ $ans2=$collection->find(['Location'=>"Mira road"]);
+  $price2=0.0;
+ foreach($ans2 as $a2){
+    $price2=$price2+$a2['price'];
+}
+  $avgprice2=$price/4;
+ $perc2=$avgprice2/$price2*100;
+
+
+  $ans3=$collection->find(['Location'=>"Dahiser(W)"]);
+  $price3=0.0;
+ foreach($ans3 as $a3){
+    $price3=$price3+$a3['price'];
+ }
+  $avgprice3=$price3/4;
+  $perc3=$avgprice3/$price3*100;
+
+
+  $ans4=$collection->find(['Location'=>"Borivali(W)"]);
+  $price=0.0;
+ foreach($ans4 as $a4){
+    $price4=$price4+$a4['price'];
+ }
+  $avgprice4=$price4/4; 
+ $perc4=$avgprice4/$price4*100;
+
+
+$ans5=$collection->find(['Location'=>"Bhayander(E)"]);
+  $price5=0.0;
+ foreach($ans5 as $a5){
+    $price5=$price5+$a5['price'];
+ }
+  $avgprice5=$price5/4; 
+ $perc5=$avgprice5/$price5*100;
+
+
+  $ans6=$collection->find(['Location'=>"Kandivali(E)"]);
+  $price6=0.0;
+ foreach($ans6 as $a6){
+    $price6=$price6+$a6['price'];
+ }
+  $avgprice6=$price6/4; 
+   $perc6=$avgprice6/$price6*100;
+
+
+   $ans7=$collection->find(['Location'=>"Kandivali(W)"]);
+  $price7=0.0;
+ foreach($ans7 as $a7){
+    $price7=$price7+$a7['price'];
+ }
+  $avgprice7=$price7/4; 
+   $perc7=$avgprice7/$price7*100;
+
+
+    $ans8=$collection->find(['Location'=>"Malad(E)"]);
+  $price8=0.0;
+ foreach($ans8 as $a8){
+    $price8=$price8+$a8['price'];
+ }
+  $avgprice8=$price8/4; 
+   $perc8=$avgprice8/$price8*100; 
+
+
+    $ans9=$collection->find(['Location'=>"Malad(W)"]);
+  $price9=0.0;
+ foreach($ans9 as $a9){
+    $price9=$price9+$a9['price'];
+ }
+  $avgprice9=$price9/4; 
+   $perc9=$avgprice9/$price9*100;*/
+   ?>
+   
+   
+   //map section
+    <!-- Filter Search Section End -->
+    <!-- Map Section Begin -->
+    <!--<div class="map-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107002.020096289!2d-96.80666618302782!3d33.06138629992991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c21da13c59513%3A0x62aa036489cd602b!2sPlano%2C+TX%2C+USA!5e0!3m2!1sen!2sbd!4v1558246953339!5m2!1sen!2sbd" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <!-- Map Section End -->
+    <!-- Hotel Room Section Begin -->
+    
+          <!--   <div class="row">
+                <div class="col-lg-4 col-md-4 col-md-6">
+                    <div class="room-items">
+                        <div class="room-img set-bg" data-setbg="img/rooms/1.jpg">
+                            <a href="#" class="room-content">
+                                <i class="flaticon-heart"></i>
+                            </a>
+                        </div>
+                        <div class="room-text">
+                            <div class="room-details">
+                                <div class="room-title">
+                                    <h5></h5>
+                                    <a href="#"><i class="flaticon-placeholder"></i> <span>Location</span></a>
+                                    <a href="#" class="large-width"><i class="flaticon-cursor"></i> <span>Show on
+                                            Map</span></a>
+                                </div>
+                            </div>
+                            <div class="room-features">
+                                <div class="room-info">
+                                    <div class="size">
+                                        <p>Lot Size</p>
+                                        <img src="img/rooms/size.png" alt="">
+                                        <i class="flaticon-bath"></i>
+                                        <span>sqft</span>
+                                    </div>
+                                    <div class="beds">
+                                        <p>Beds</p>
+                                        <img src="img/rooms/bed.png" alt="">
+                                        <span>9</span>
+                                    </div>
+                                    <div class="baths">
+                                        <p>Baths</p>
+                                        <img src="img/rooms/bath.png" alt="">
+                                        <span>2</span>
+                                    </div>
+                                    <div class="garage">
+                                        <p>Garage</p>
+                                        <img src="img/rooms/garage.png" alt="">
+                                        <span>1</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="room-price">
+                                <p>For Sale</p>
+                                <span>$345,000</span>
+                            </div>
+                            <a href="#" class="site-btn btn-line">View Property</a>
+                        </div>
+                    </div>
+                </div>-->
+
+//check icon switch code with onject to string converting error
+/*$prop=[];
+									$this->propertyMap[$property->{_id}->__toString()] = $property->name;
+									$str=(string) new $propertyfeatured;
+									$prop=explode('',$str);
+									
+									$i=0;
+									foreach($prop as $doc){
+										echo' <table>
+                                            <tr>';
+										switch($doc){
+											case "Carpeting":{
+										echo '<td><img src="img/check.png" alt=""> Carpeting</td>';
+										break;
+										}
+										case " Attic fans":{
+										  echo '<td><img src="img/check.png" alt=""> Attic fans</td>';
+										  break;
+										  }
+										  case "Media room":{
+										  echo '<td><img src="img/check.png" alt=""> Media room</td>';
+										  break;
+										  }
+										  echo '</tr><tr>';
+											case "Concrete":{
+											echo '<td><img src="img/check.png" alt=""> Concrete</td>';
+											break;
+											}
+                                               case "Ceiling fans":{
+											   echo ' <td><img src="img/check.png" alt=""> Ceiling fans</td>';break;}
+                                                case "Family room":{echo '<td><img src="img/check.png" alt=""> Family room</td>';break;}
+												
+                                               case "Bamboo":{echo ' <td><img src="img/check.png" alt=""> Bamboo</td>';break;}
+                                               case "Thermostats": { echo '<td><img src="img/check.png" alt=""> Thermostats</td>';break;}
+                                      case "Gym/workout room":{ echo '<td><img src="img/check.png" alt=""> Gym/workout room</td>';break;}
+                                       case "Stone":{ echo '<td><img src="img/check.png" alt="">Stone</td>';break;}
+                                             case "Single flush toilets":{ echo '<td><img src="img/check.png" alt=""> Single flush toilets</td>';break;}
+												 case "Library":{echo '<td><img src="img/check.png" alt=""> Library</td>';break;}
+                                                case "Tile":{echo '<td><img src="img/check.png" alt=""> Tile</td>';break;}
+										case "Window shutters":{echo '<td><img src="img/check.png" alt=""> Window shutters</td>';break;}
+                                             case "Butlers pantry":{ echo'<td><img src="img/check.png" alt=""> Butlers pantry</td>';break;}
+                                               case "Laminate":{ echo ' <td><img src="img/check.png" alt=""> Laminate</td>';break;}
+                                               case "Solar heat":{ echo ' <td><img src="img/check.png" alt=""> Solar heat</td>';break;}
+                                           
+                                              case "Sunroom":{ echo '  <td><img src="img/check.png" alt=""> Sunroom</td>';break;}
+                                              case "Cork":{ echo '  <td><img src="img/check.png" alt=""> Cork</td>';break;}
+                                              case " Solar plumbing":{ echo '  <td><img src="img/check.png" alt=""> Solar plumbing</td>';break;} 
+                                           
+                                             case "Downstairs bedroom":{ echo '   <td><img src="img/check.png" alt=""> Downstairs bedroom</td>';break;}
+                                             case "Vinyl / linoleum":{ echo '   <td><img src="img/check.png" alt=""> Vinyl / linoleum</td>';break;}
+                                             case " Solar Screens":{ echo '   <td><img src="img/check.png" alt=""> Solar Screens</td>';break;}
+                                           case "Basement":{ echo ' <td><img src="img/check.png" alt=""> Basement</td>';break;}
+                                             case "Manufactured wood":{ echo '   <td><img src="img/check.png" alt=""> Manufactured wood</td>';break;}
+                                              case " Storm windows":{ echo '  <td><img src="img/check.png" alt=""> Storm windows</td>';break;}
+                                         
+                                             case "Guest quarters":{ echo '   <td><img src="img/check.png" alt=""> Guest quarters</td>';break;}
+                                             case "Marble":{ echo '   <td><img src="img/check.png" alt=""> Marble</td>';break;}
+                                             case "Tankless water heater":{ echo '   <td><img src="img/check.png" alt=""> Tankless water heater</td>';break;}
+                                            
+                                             case " Wine storage":{ echo '   <td><img src="img/check.png" alt=""> Wine storage</td>';break;}
+                                             case "Wood":{ echo '   <td><img src="img/check.png" alt=""> Wood</td>';break;}
+                                              case "Skylights or sky tubes":{ echo '  <td><img src="img/check.png" alt=""> Skylights or sky tubes</td>';break;}
+											  default:{ echo 'No features were found'; break;}
+											  }
+											  $i++;
+if($i%3==0){
+	echo '</tr><tr>';
+}											  
+											 */ 

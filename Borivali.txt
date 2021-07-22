@@ -1,0 +1,96 @@
+//Creating Database
+use Properties  //Properties Database name 
+db
+show dbs    //To get list of databases names
+----------------------------------------------------------------------------------------------------------------
+//Creating Collection (Tables)
+db.createCollection("AreasInMumbai")   //AreasInMumbai Collection name
+-----------------------------------------------------------------------------------------------------------------
+//Creating collection of AreasInMumbai
+db.createCollection("Borivali(West)")
+db.createCollection("Borivali(East)")
+-----------------------------------------------------------------------------------------------------------------
+//Creating collection of Borivali West
+db.createCollection("Devki_Nagar")
+db.createCollection("Ashtavinayak_Nagar")
+db.createCollection("Dattani_Nagar")
+db.createCollection("Gorai_Nagar")
+db.createCollection("Haridas_Nagar")
+db.createCollection("Pai_Nagar")
+db.createCollection("Punit_Nagar")
+db.createCollection("Roshan_Nagar")
+db.createCollection("Dalvi_Nagar")
+db.createCollection("Dev_Nagar")
+db.createCollection("Hari_Om_Nagar")
+db.createCollection("Padma_Nagar")
+db.createCollection("Prem_Nagar")
+db.createCollection("Saibaba_Nagar")
+db.createCollection("CKP_Colony")
+db.createCollection("LIC_Colony")
+db.createCollection("Mhada_Colony")
+db.createCollection("Eksar_Village")
+db.createCollection("Maryland_Complex")
+db.createCollection("Cosmos_Gardens")
+db.createCollection("Kastur_Park")
+db.createCollection("Kanti_Park")
+db.createCollection("Mt_Poinsur")
+db.createCollection("Babhai")
+db.createCollection("Chikoowadi")
+db.createCollection("Eksar")
+-----------------------------------------------------------------------------------------------------------------
+//Creating collection sectors in Devki_Nagar
+db.createCollection("Devki_Nagar_Sector1")
+db.createCollection("Devki_Nagar_Sector2")
+
+
+
+------------------------------------------------------------------------------------------------------------------
+***********************Inserting values in Borivali West SubLocation collection**********************************
+------------------------------------------------------------------------------------------------------------------
+//Inserting values in Devki Nagar sector 1
+db.Devki_Nagar_Sector1.insert([
+{"Property_Name":"Shivthar","Property_Type":"Rent","Lot_Size":"500_Sq.ft","Bedrooms":1,Bathrooms":1,"Location":"Devki_Nagar_Sector1","Property_Feature1":"","Garage":1,"Owner_Name":"Rakesh_Bhawlekar"},
+{"Property_Name":'Mohak',"Property_Type":'Rent',"Lot_Size":'800_Sq.ft',"Bedrooms":2,"Bathrooms":2,"Location":'Devki_Nagar_Sector1',"Property_Features":"","Garage":1,"Owner_Name":'Tushal_Pawar'},
+{"Property_Name":'Shivraj',"Property_Type":'Rent',"Lot_Size":'900_Sq.ft',"Bedrooms":2,"Bathrooms":2,"Location":'Devki_Nagar_Sector1',"Property_Features":'',"Garage":1,"Owner_Name":'Rajaram_Bhayde'},
+{"Property_Name":"RajGulmohar","Property_Type":"Rent","Lot_Size":"600_Sq.ft","Bedrooms":1,Bathrooms":1,"Location":"Devki_Nagar_Sector1","Property_Features":"","Garage":1,"Owner_Name":"Sadrick_Disouza"},
+{"Property_Name":"Runuval","Property_Type":"Rent","Lot_Size":"800_Sq.ft","Bedrooms":2,Bathrooms":2,"Location":"Devki_Nagar_Sector1","Property_Features":"","Garage":1,"Owner_Name":"Walter_Dicosta"},
+{"Property_Name":"Ashoka","Property_Type":"Rent","Lot_Size":"600_Sq.ft","Bedrooms":1,Bathrooms":1,"Location":"Devki_Nagar_Sector1","Property_Features":"","Garage":1,"Owner_Name":"UnniKrishnan_Nayar"},
+{"Property_Name":"Krishna","Property_Type":"Rent","Lot_Size":"500_Sq.ft","Bedrooms":1,Bathrooms":1,"Location":"Devki_Nagar_Sector1","Property_Features":"","Garage":1,"Owner_Name":"Kushal_Budreke"},
+{"Property_Name":"Paritosh","Property_Type":"Rent","Lot_Size":"900_Sq.ft","Bedrooms":2,Bathrooms":2,"Location":"Devki_Nagar_Sector1","Property_Features":"","Garage":1,"Owner_Name":"Rajesh_Parmar"},
+{"Property_Name":"Kshitij","Property_Type":"Rent","Lot_Size":"600_Sq.ft","Bedrooms":1,Bathrooms":2,"Location":"Devki_Nagar_Sector1","Property_Features":"","Garage":1,"Owner_Name":"Praneet_Mehta"},
+{"Property_Name":"Kalyan","Property_Type":"Rent","Lot_Size":"800_Sq.ft","Bedrooms":2,Bathrooms":1,"Location":"Devki_Nagar_Sector1","Property_Features":"","Garage":1,"Owner_Name":"Omkar_Pednekar"},
+{"Property_Name":"Lalbagh","Property_Type":"Rent","Lot_Size":"500_Sq.ft","Bedrooms":1,Bathrooms":2,"Location":"Devki_Nagar_Sector1","Property_Features":"","Garage":1,"Owner_Name":"Srikant_Mehta"},
+{"Property_Name":"Ranjana","Property_Type":"Rent","Lot_Size":"900_Sq.ft","Bedrooms":2,Bathrooms":1,"Location":"Devki_Nagar_Sector1","Property_Features":"","Garage":1,"Owner_Name":"Minal_Shah"},
+{"Property_Name":"Shiv_Shakti","Property_Type":"Rent","Lot_Size":"800_Sq.ft","Bedrooms":2,Bathrooms":2,"Location":"Devki_Nagar_Sector1","Property_Features":"","Garage":1,"Owner_Name":"Sima_Dev"},
+{"Property_Name":"Om_Sai","Property_Type":"Rent","Lot_Size":"500_Sq.ft","Bedrooms":1,Bathrooms":1,"Location":"Devki_Nagar_Sector1","Property_Features":"","Garage":1,"Owner_Name":"Manesha_Patel"},
+{"Property_Name":"Kalpataru","Property_Type":"Rent","Lot_Size":"500_Sq.ft","Bedrooms":1,Bathrooms":2,"Location":"Devki_Nagar_Sector1","Property_Features":"","Garage":1,"Owner_Name":"Ruchi_Devekar"},
+{"Property_Name":"Blossom","Property_Type":"Rent","Lot_Size":"900_Sq.ft","Bedrooms":2,Bathrooms":2,"Location":"Devki_Nagar_Sector1","Property_Features":"","Garage":1,"Owner_Name":"Amruta_Rao"},
+{"Property_Name":"Hiranandani","Property_Type":"Rent","Lot_Size":"1000_Sq.ft","Bedrooms":3,Bathrooms":2,"Location":"Devki_Nagar_Sector1","Property_Features":"","Garage":1,"Owner_Name":"Vidya_Balan"},
+{"Property_Name":"Lalavati","Property_Type":"Rent","Lot_Size":"1000_Sq.ft","Bedrooms":3,Bathrooms":1,"Location":"Devki_Nagar_Sector1","Property_Features":"","Garage":1,"Owner_Name":"Suprodo_Chatterjee"},
+{"Property_Name":"Aasawari","Property_Type":"Rent","Lot_Size":"900_Sq.ft","Bedrooms":2,Bathrooms":1,"Location":"Devki_Nagar_Sector1","Property_Features":"","Garage":1,"Owner_Name":"Bhushan_Thapa"},
+{"Property_Name":"Ganesha","Property_Type":"Rent","Lot_Size":"500_Sq.ft","Bedrooms":1,Bathrooms":2,"Location":"Devki_Nagar_Sector1","Property_Features":"","Garage":1,"Owner_Name":"Santosh_Sinde"},
+])
+------------------------------------------------------------------------------------------------------------------
+//Inserting values in Devki Nagar sector 2
+db.Devki_Nagar_Sector2.insert([
+{"Property_Name":"Gajanan","Property_Type":"Rent","Lot_Size":"600_Sq.ft","Bedrooms":1,Bathrooms":2,"Location":"Devki_Nagar_Sector2","Property_Features":"","Garage":1,"Owner_Name":"Vijay_Pllai"},
+{"Property_Name":"IndraPrast","Property_Type":"Rent","Lot_Size":"800_Sq.ft","Bedrooms":2,Bathrooms":1,"Location":"Devki_Nagar_Sector2","Property_Features":"","Garage":1,"Owner_Name":"Nilam_Goshwami"},
+{"Property_Name":"Suhana","Property_Type":"Rent","Lot_Size":"900_Sq.ft","Bedrooms":2,Bathrooms":2,"Location":"Devki_Nagar_Sector2","Property_Features":"","Garage":1,"Owner_Name":"Punam_Gore"},
+{"Property_Name":"Ruhina","Property_Type":"Rent","Lot_Size":"600_Sq.ft","Bedrooms":1,Bathrooms":1,"Location":"Devki_Nagar_Sector2","Property_Features":"","Garage":1,"Owner_Name":"Santosh_Mishra"},
+{"Property_Name":"Jannat","Property_Type":"Rent","Lot_Size":"500_Sq.ft","Bedrooms":1,Bathrooms":1,"Location":"Devki_Nagar_Sector2","Property_Features":"","Garage":1,"Owner_Name":"MAngesh_Girkar"},
+{"Property_Name":"Prathamesh","Property_Type":"Rent","Lot_Size":"800_Sq.ft","Bedrooms":2,Bathrooms":2,"Location":"Devki_Nagar_Sector2","Property_Features":"","Garage":1,"Owner_Name":"Siddhi_Tiwari"},
+{"Property_Name":"Roshni","Property_Type":"Rent","Lot_Size":"900_Sq.ft","Bedrooms":2,Bathrooms":2,"Location":"Devki_Nagar_Sector2","Property_Features":"","Garage":1,"Owner_Name":"Ranjana_Ghode"},
+{"Property_Name":"Parijat","Property_Type":"Rent","Lot_Size":"600_Sq.ft","Bedrooms":1,Bathrooms":1,"Location":"Devki_Nagar_Sector2","Property_Features":"","Garage":1,"Owner_Name":"Sushant_Ghosle"},
+{"Property_Name":"Rustomjee","Property_Type":"Rent","Lot_Size":"800_Sq.ft","Bedrooms":2,Bathrooms":2,"Location":"Devki_Nagar_Sector2","Property_Features":"","Garage":1,"Owner_Name":"Sushma_Nibalkar"},
+{"Property_Name":"Kaustubh","Property_Type":"Rent","Lot_Size":"600_Sq.ft","Bedrooms":1,Bathrooms":1,"Location":"Devki_Nagar_Sector2","Property_Features":"","Garage":1,"Owner_Name":"Sagar_Joshi"},
+{"Property_Name":"Pranav","Property_Type":"Rent","Lot_Size":"600_Sq.ft","Bedrooms":1,Bathrooms":1,"Location":"Devki_Nagar_Sector2","Property_Features":"","Garage":1,"Owner_Name":"Niddhi_Shelar"},
+{"Property_Name":"Rivali","Property_Type":"Rent","Lot_Size":"900_Sq.ft","Bedrooms":2,Bathrooms":2,"Location":"Devki_Nagar_Sector2","Property_Features":"","Garage":1,"Owner_Name":"Eknat_Mane"},
+{"Property_Name":"Bhoomi","Property_Type":"Rent","Lot_Size":"600_Sq.ft","Bedrooms":1,Bathrooms":2,"Location":"Devki_Nagar_Sector2","Property_Features":"","Garage":1,"Owner_Name":"Ahmad_Patel"},
+{"Property_Name":"Aroha","Property_Type":"Rent","Lot_Size":"900_Sq.ft","Bedrooms":2,Bathrooms":1,"Location":"Devki_Nagar_Sector2","Property_Features":"","Garage":1,"Owner_Name":"Girish_Kadam"},
+{"Property_Name":"Ekta","Property_Type":"Rent","Lot_Size":"600_Sq.ft","Bedrooms":1,Bathrooms":2,"Location":"Devki_Nagar_Sector2","Property_Features":"","Garage":1,"Owner_Name":"Pankaja_Sone"},
+{"Property_Name":"Yogiraj","Property_Type":"Rent","Lot_Size":"800_Sq.ft","Bedrooms":2,Bathrooms":2,"Location":"Devki_Nagar_Sector2","Property_Features":"","Garage":1,"Owner_Name":"Vijay_Vattwar"},
+{"Property_Name":"Siddheshwar","Property_Type":"Rent","Lot_Size":"900_Sq.ft","Bedrooms":3,Bathrooms":2,"Location":"Devki_Nagar_Sector2","Property_Features":"","Garage":1,"Owner_Name":"Vishwajit_Zha"},
+{"Property_Name":"Gurukrupa","Property_Type":"Rent","Lot_Size":"1000_Sq.ft","Bedrooms":3,Bathrooms":1,"Location":"Devki_Nagar_Sector2","Property_Features":"","Garage":1,"Owner_Name":"Manda_Mhatre"},
+{"Property_Name":"Sunrise","Property_Type":"Rent","Lot_Size":"900_Sq.ft","Bedrooms":2,Bathrooms":1,"Location":"Devki_Nagar_Sector2","Property_Features":"","Garage":1,"Owner_Name":"Anisha_Shirsagar"},
+{"Property_Name":"Khodiyar","Property_Type":"Rent","Lot_Size":"500_Sq.ft","Bedrooms":1,Bathrooms":2,"Location":"Devki_Nagar_Sector2","Property_Features":"","Garage":1,"Owner_Name":"Meghana_Kulkarni"},
+])

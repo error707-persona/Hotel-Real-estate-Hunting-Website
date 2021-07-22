@@ -1,0 +1,169 @@
+ <section class="property-details">
+	<!--<form action="insertdetails.php" method="POST">-->
+        <div class="container">
+            <div class="row sp-40 spt-40">
+                <div class="col-lg-8">
+                    <div class="p-ins">
+                        <div class="row details-top">
+                            <div class="col-lg-12">
+                                <div class="t-details">
+                                    <div class="register-id">
+                                        <p>Registered ID: <span><?php $idd=$document["_id"]; echo $idd;?></span></p>
+                                    </div>
+                                    <div class="popular-room-features single-property">
+                                        <div class="size">
+                                            <p>Lot Size</p>
+                                            <img src="img/rooms/size.png" alt="">
+                                            <i class="flaticon-bath"></i>
+                                            <span><?php $lotsized=$document["lotsize"]; echo $lotsized;?></span>
+                                        </div>
+                                        <div class="beds">
+                                            <p>Beds</p>
+                                            <img src="img/rooms/bed.png" alt="">
+                                            <span><?php $bedd=$document["bed"]; echo $bedd; ?></span>
+                                        </div>
+                                        <div class="baths">
+                                            <p>Baths</p>
+                                            <img src="img/rooms/bath.png" alt="">
+                                            <span><?php $bathsd=$document["bath"]; echo $bathsd;?></span>
+                                        </div>
+                                        <div class="garage">
+                                            <p>Garage</p>
+                                            <img src="img/rooms/garage.png" alt="">
+                                            <span><?php $garaged=$document["garage"]; echo $garaged;?></span>
+											
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="property-description">
+                                    <h4>Description with address details:</h4>
+                                    <p><?php $descriptiond=$document["description"]; echo $descriptiond; ?></textarea> </p>
+                                <br>
+								
+                                    <h4>Property Name:</h4>
+                                    <p><span><?php $propertynamed=$document["propertyname"]; echo $propertynamed;?></textarea></span> </p>
+                              </div>
+                                <div class="property-features">
+                                    <h4>Property Features</h4>
+                                    <div class="property-table">
+                                        <table>
+                                            <tr>
+											<?php $propertyfeatured=$document["propertyfeature"]; echo $propertyfeatured;
+											?>
+                                               
+											</tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="location-map">
+                                    <h4>Location</h4>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107002.020096289!2d-96.80666618302782!3d33.06138629992991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c21da13c59513%3A0x62aa036489cd602b!2sPlano%2C+TX%2C+USA!5e0!3m2!1sen!2sbd!4v1558246953339!5m2!1sen!2sbd" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row pb-30">
+                        <div class="col-lg-12">
+                            <div class="contact-service">
+                                <img src="img/single-property/download.png" alt="">
+                                <p>Listed by</p>
+								
+                                <h5><?php $firstn=$document['ownerfirstname']; $lastn=$document['ownerlastname']; {echo $firstn.' '.$lastn;}?></h5>
+                                <table>
+                                    <tr>
+                                        <td><center>Office : <?php  $office=$document['office'];if($office!=''){ echo $office;}?></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><center>Mobile : <?php  $mobile=$document['mobile']; if($mobile!='') {echo $mobile;}?></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><center>Fax : <?php $fax=$document['fax']; if($fax!=''){echo $fax;}?></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><center>WhatsApp : <?php $whatsapp=$document['whatsapp']; if($whatsapp!='') {echo $whatsapp;}?></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><center>Email : <?php $email=$document['email']; echo $email;?></span></td>
+										
+                                    </tr>
+                                </table>
+								 <a href="sessionend.php" class="site-btn list-btn">Logout</a>
+								 <a href="editdetails.php" class="site-btn list-btn">Edit profile</a>
+								 <a href="uploadpropertyform.php" class="site-btn list-btn">Add</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="room-items">
+                                <div class="room-img set-bg" data-setbg="img/rooms/4.jpg">
+                                    <a href="#" class="room-content">
+                                        <i class="flaticon-heart"></i>
+                                    </a>
+                                </div>
+                                <div class="room-text">
+                                    <div class="room-details">
+                                        <div class="room-title">
+                                            <h5><?php $propertyname=$document['propertyname']; echo $propertyname;?></h5>
+                                            <a href="#"><i class="flaticon-placeholder"></i> <span>Location</span></a>
+                                            <a href="#" class="large-width"><i class="flaticon-cursor"></i> <span>Show
+                                                    on Map</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="room-features">
+                                        <div class="room-info">
+                                            <div class="size">
+                                                <p>Lot Size</p>
+                                                <img src="img/rooms/size.png" alt="">
+                                                <i class="flaticon-bath"></i>
+                                                <span><?php $lotsize=$document['lotsize']; echo $lotsize;?></span>
+                                            </div>
+                                            <div class="beds">
+                                                <p>Beds</p>
+                                                <img src="img/rooms/bed.png" alt="">
+                                                <span><?php $bed=$document['bed']; echo $bed;?></span>
+                                            </div>
+                                            <div class="baths">
+                                                <p>Baths</p>
+                                                <img src="img/rooms/bath.png" alt="">
+                                                <span><?php $baths=$document['bath']; echo $baths;?></span>
+                                            </div>
+                                            <div class="garage">
+                                                <p>Garage</p>
+                                                <img src="img/rooms/garage.png" alt="">
+                                                <span><?php $garage=$document['garage']; echo $garage;?></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="room-price">
+                                        <p>For Sale</p>
+                                        <span>$<?php $price=$document['price']; echo $price;?></span>
+                                    </div>
+                                    <a href="#" class="site-btn btn-line">View Property</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    </section>
+	//restricting url access code
+	/*if ( $_SERVER['REQUEST_METHOD']=='GET' && realpath(__FILE__) == realpath( $_SERVER['SCRIPT_FILENAME'] ) ) {
+         /*
+           Up to you which header to send, some prefer 404 even if 
+           the files does exist for security
+        
+        header( 'HTTP/1.0 403 Forbidden', TRUE, 403 );
+
+        // choose the appropriate page to redirect users 
+        die( header( 'location:Login.php' ) );
+
+    }*/

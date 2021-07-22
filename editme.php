@@ -1,0 +1,44 @@
+ <?php
+  require 'vendor/autoload.php';
+$client=new MongoDB\Client;
+$companydb=$client->companydb;
+$collection=$companydb->vendordetailscollection;
+$email=$_SESSION['email'];
+$firstname=$_POST['firstname'];
+$lastname=$_POST['lastname'];
+$office=$_POST['office'];
+$mobile=$_POST['mobile'];
+
+	if(isset($firstname))
+	{
+	$up=$collection->updateOne(
+	['email'=>$email],['$set'=>['firstname'=$firstname]]
+	);
+}
+if(isset($lastname)){
+	$y=$collection->updateOne(
+	['email'=>$email],['$set'=>['lastname'=>$lastname]]
+	);
+}
+if(isset($office)){
+	$x=$collection->updateOne(
+	['email'=>$email],['$set'=>['office'=>$office]]
+	);
+}
+if(isset($fax))
+{
+	$c=$collection->updateOne(
+	['email'=>$email],['$set'=>['fax'=>$fax]]
+	);
+}
+if(isset($mobile)){
+	$y=$collection->updateOne(
+	['email'=>$email],['$set'=>['mobile'=>$mobile]]
+	);
+}
+if(isset($whatsapp)){
+	$y=$collection->updateOne(
+	['email'=>$email],['$set'=>['whatsapp'=>$whatsapp]]
+	);
+}
+?>
